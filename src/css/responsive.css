@@ -1,0 +1,139 @@
+@media (min-width: 600px) {
+	.pricing-grid {
+		max-width: 600px;
+		width: 100%;
+		display: grid;
+		grid: "header header" "plan benefits" auto / 50%;
+		border-radius: 7px;
+	}
+
+	.pricing-header,
+	.pricing-plan,
+	.pricing-benefits {
+		padding: 35px;
+	}
+
+	/* Header */
+
+	.pricing-header .guarantee {
+		font-size: 1.7rem;
+	}
+
+	.pricing-header .description {
+		line-height: 1.7;
+		font-size: 1.5rem;
+	}
+
+	/* Plan */
+
+	.pricing-grid .pricing-plan {
+		border-radius: 0 0 0 7px;
+	}
+
+	.pricing-plan .description {
+		margin-bottom: 25px;
+		font-size: 1.5rem;
+	}
+
+	/* Benefits */
+
+	.pricing-grid .pricing-benefits {
+		border-radius: 0 0 7px 0;
+	}
+
+	.pricing-benefits .list {
+		gap: 4px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.pricing-grid {
+		max-width: 40vw;
+		border-radius: 0.8vw;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 1px 6px rgba(0, 0, 0, 0.059);
+	}
+
+	.pricing-header,
+	.pricing-plan,
+	.pricing-benefits {
+		padding: 2vw;
+	}
+
+	.title {
+		margin-bottom: 1.3vw;
+		font-size: 1.1vw;
+	}
+
+	/* Header */
+
+	.pricing-grid .pricing-header {
+		border-radius: 0.8vw 0.8vw 0 0;
+	}
+
+	.pricing-header .title {
+		margin-bottom: 1.1vw;
+		font-size: 1.6vw;
+	}
+
+	.pricing-header .guarantee {
+		margin-bottom: 0.9vw;
+		font-size: 1.2vw;
+	}
+
+	.pricing-header .description {
+		margin-bottom: 0.3vw;
+		line-height: 2;
+		font-size: 1vw;
+	}
+
+	/* Plan */
+
+	.pricing-grid .pricing-plan {
+		border-radius: 0 0 0 0.8vw;
+	}
+
+	.pricing-plan .price {
+		gap: 0.5vw;
+		margin-bottom: 0.6vw;
+		font-size: 0.9vw;
+	}
+
+	.pricing-plan .price strong {
+		font-size: 2.2vw;
+	}
+
+	.pricing-plan .description {
+		margin-bottom: 1.7vw;
+		font-size: 1vw;
+	}
+
+	.pricing-plan .btn-signup {
+		border-radius: 0.3vw;
+		padding: 0.9vw 1vw;
+		font-size: 0.9vw;
+	}
+
+	/* hover */
+
+	.pricing-plan .btn-signup:hover {
+		box-shadow: 0 0 1vw 0 var(--Bright-Yellow);
+	}
+
+	.pricing-plan .btn-signup:active {
+		transform: scale(0.98);
+	}
+
+	/* Benefits */
+
+	.pricing-grid .pricing-benefits {
+		border-radius: 0 0 0.8vw 0;
+	}
+
+	.pricing-benefits .list {
+		gap: 0.3vw;
+	}
+
+	.pricing-benefits .list .item {
+		font-size: 0.85vw;
+	}
+}

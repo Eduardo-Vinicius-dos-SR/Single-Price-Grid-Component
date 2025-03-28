@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+body {
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--Light-Gray);
+	font-family: "Karla", sans-serif;
+	padding: 50px 10px;
+}
+
+.pricing-grid {
+	max-width: 325px;
+	display: grid;
+	grid: "header" "plan" "benefits";
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.pricing-header,
+.pricing-plan,
+.pricing-benefits {
+	padding: 25px;
+	color: #fff;
+}
+
+.title {
+	margin-bottom: 15px;
+	font-size: 1.8rem;
+}
+
+/* Header */
+
+.pricing-grid .pricing-header {
+	grid-area: header;
+	border-radius: 5px 5px 0 0;
+}
+
+.pricing-header .title {
+	margin-bottom: 15px;
+	font-size: 2.2rem;
+	color: var(--Dark-Cyan);
+}
+
+.pricing-header .guarantee {
+	margin-bottom: 18px;
+	font-size: 1.6rem;
+	font-weight: 700;
+	color: var(--Bright-Yellow);
+}
+
+.pricing-header .description {
+	margin-bottom: 5px;
+	line-height: 1.8;
+	font-size: 1.4rem;
+	color: var(--Grayish-Blue);
+}
+
+/* Plan */
+.pricing-grid .pricing-plan {
+	grid-area: plan;
+	background-color: var(--Dark-Cyan);
+}
+
+.pricing-plan .price {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.pricing-plan .price strong {
+	color: #fff;
+	font-size: 3rem;
+}
+
+.pricing-plan .description {
+	margin-bottom: 30px;
+	font-size: 1.6rem;
+}
+
+.pricing-plan .btn-signup {
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	padding: 15px 20px;
+	background-color: var(--Bright-Yellow);
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+}
+
+/* hover */
+
+.pricing-plan .btn-signup:hover {
+	box-shadow: 0 0 5px 0 var(--Bright-Yellow);
+}
+
+.pricing-plan .btn-signup:active {
+	transform: scale(0.98);
+}
+
+/* Benefits */
+
+.pricing-grid .pricing-benefits {
+	grid-area: benefits;
+	border-radius: 0 0 5px 5px;
+	background-color: var(--Cyan);
+}
+
+.pricing-benefits .list {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.pricing-benefits .list .item {
+	opacity: 0.8;
+	font-size: 1.4rem;
+}
